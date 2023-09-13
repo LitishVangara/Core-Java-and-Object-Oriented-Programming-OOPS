@@ -1,0 +1,48 @@
+class Account
+{
+	public void facilites()
+	{
+		System.out.println("provides ATM-cum-debit cards");
+		System.out.println("provides Internet Banking");
+		System.out.println("provides Individual Account Facility");
+		System.out.println("provides Joint Account Facility");
+	}
+}
+class SavingsAccount extends Account
+{
+	public void useOfSA()
+	{
+		System.out.println("*****************Use of Savings Account-***************************");
+	    System.out.println("Saving Purpose");
+		System.out.println(" Lower einisun Balance charges");
+		System.out.println("No Folio Charges");
+		System.out.println("Charges not collected for cheque Book");
+	}
+}
+class CurrentAccount extends Account
+{
+	public void useOfCA()
+	{
+		System.out.println("****************Use of Current Account-****************************");
+		System.out.println("Business Purpose");
+		System.out.println("Higher minimum Balance charges");
+		System.out.println("Folio Charges are applied");
+		System.out.println("Charges collected for cheque Book");
+	}
+}
+class accounts
+{
+	public static void main(String[] args)
+	{
+		Account al = (Account) new SavingsAccount();
+		al.facilites();
+		SavingsAccount s1 = (SavingsAccount) al;
+		s1.facilites();
+		s1.useOfSA();
+		Account a2 =(Account) new CurrentAccount();
+		a2.facilites();
+		CurrentAccount c1 = (CurrentAccount) a2;
+		c1.useOfCA(); 
+		c1. facilites();
+	}
+}

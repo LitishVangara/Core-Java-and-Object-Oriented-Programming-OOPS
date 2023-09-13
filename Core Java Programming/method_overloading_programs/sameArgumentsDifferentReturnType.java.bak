@@ -1,0 +1,18 @@
+class sameArgumentsDifferentReturnType
+{
+	public static void main(String[] args) 
+	{
+		sameArguments(50,5);
+	}
+	public static void sameArguments(int a, int b)
+	{
+		int total = sameArguments(a,b);
+		int e = total;
+		System.out.println(e);
+	}
+	public static int sameArguments(int a, int b)
+	{
+		int g = a+b;
+		return g;
+	}
+}

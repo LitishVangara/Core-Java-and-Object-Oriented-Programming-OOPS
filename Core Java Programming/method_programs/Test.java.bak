@@ -1,0 +1,19 @@
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		bag();
+		Test o1 = new Test();
+		o1.book();
+		System.out.println("Hello World!");
+	}
+	public static void bag() 
+	{
+		System.out.println("Hello World!");
+	}
+	public void book() 
+	{
+		System.out.println("Hello World!");
+	}
+}

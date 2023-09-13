@@ -1,0 +1,18 @@
+class minutesTakenByBoy
+{
+	public static void main(String[] args) 
+	{
+		findTimeInMin(5,150);
+	}
+	public static void findTimeInMin(int speed, int distance)
+	{
+		int timeInSec = findTimeInSec(speed,distance);
+		double timeInMin = timeInSec/60.0;
+		System.out.println("The number of minutes taken by the Boy is = "+timeInMin+" Minutes");
+	}
+	public static int findTimeInSec(int speed, int distance)
+	{
+        int timeInSec = distance/speed;
+		return timeInSec;
+	}
+}

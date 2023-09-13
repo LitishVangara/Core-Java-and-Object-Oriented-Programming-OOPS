@@ -1,0 +1,4 @@
+abstract Sample
+{
+	abstract public void test();
+}

@@ -1,0 +1,26 @@
+class C
+{
+	public double i = 1.1;
+}
+class D extends C
+{
+	public int j = 0.9;
+}
+class E extends D
+{
+	public double k = 0.8;
+	public void display()
+	{
+		System.out.println(i);
+		System.out.println(j);
+		System.out.println(k);
+	}
+}
+class multiLevel 
+{
+	public static void main(String[] args) 
+	{
+		E o1 = new E();
+		o1.display();
+	}
+}

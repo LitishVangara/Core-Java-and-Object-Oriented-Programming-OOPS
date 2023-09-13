@@ -1,0 +1,9 @@
+public class InterfaceSingleLevel 
+{
+	public static void main(String[] args) 
+	{
+		Sample1 o1 = new Demo();
+		o1.move();
+		o1.move1();
+	}
+}

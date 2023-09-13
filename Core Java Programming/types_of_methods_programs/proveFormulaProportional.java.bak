@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class proveFormulaProportional
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter x value = ");
+		double x = scan.nextInt();
+		System.out.println("Enter y value = ");
+		double y = scan.nextInt();
+		double a=x;
+		double b=y;
+		compare(a,b);
+	}
+	public static void compare(double a, double b)
+	{
+        double leftHandSideTotal = lhs(a,b);
+        double rightHandSideTotal = rhs(a,b);
+		if (leftHandSideTotal==rightHandSideTotal)
+		{
+			System.out.println("The total of LHS is = "+leftHandSideTotal);
+			System.out.println("The total of RHS is = "+rightHandSideTotal);
+		    System.out.println("Therefore LHS and RHS are equal.  "+leftHandSideTotal+" = "+rightHandSideTotal);
+			System.out.println("Therefore (a*a) + (b*b) = ((a+b)*(a+b)) - 2*a*b");
+		}
+		else
+		{
+			System.out.println("The total of LHS is = "+leftHandSideTotal);
+			System.out.println("The total of RHS is = "+rightHandSideTotal);
+		    System.out.println("Therefore LHS and RHS are not equal.  "+leftHandSideTotal+" != "+rightHandSideTotal);
+			System.out.println("Therefore (a*a) + (b*b) != ((a+b)*(a+b)) - 2*a*b");
+		}
+	}
+	public static double lhs(double a, double b)
+	{
+        double leftHandSideTotal = (a*a) + (b*b);
+		return leftHandSideTotal;
+	}
+	public static double rhs(double a, double b)
+	{
+        double rightHandSideTotal = ((a+b)*(a+b)) - 2*a*b;
+		return rightHandSideTotal;
+	}
+}

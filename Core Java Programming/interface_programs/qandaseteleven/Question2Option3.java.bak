@@ -1,0 +1,9 @@
+class Question2Option3 
+{
+	final public int z;
+	public static void main(String[] args) 
+	{
+		z = 1089;
+		System.out.println(z);
+	}
+}

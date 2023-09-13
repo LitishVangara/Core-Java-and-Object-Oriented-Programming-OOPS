@@ -1,0 +1,30 @@
+abstract class Vehicles
+{
+	abstract public void vehicle();
+}
+class Car extends Vehicles
+{
+	public void vehicle()
+	{
+		System.out.println("Car Manufacturing is completed.");
+	}
+}
+class Bike extends Vehicles
+{
+	public void vehicle()
+	{
+		System.out.println("Bike Manufacturing is completed.");
+	}
+}
+class VehicleAbstractHierarchical 
+{
+	public static void manufacture (Vehicles manufacturing)
+	{
+		manufacturing.Vehicles();
+	}
+	public static void main(String[] args) 
+	{
+		manufacture (new Car());
+		manufacture (new Bike());
+	}
+}

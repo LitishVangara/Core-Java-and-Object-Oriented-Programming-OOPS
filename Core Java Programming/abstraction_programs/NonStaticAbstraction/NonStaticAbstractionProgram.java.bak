@@ -1,0 +1,9 @@
+class NonStaticAbstractionProgram 
+{
+	public static void main(String[] args) 
+	{
+		Run o2 = new Run();
+		Sample o1 = o2.getObject();
+		o1.test();
+	}
+}

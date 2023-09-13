@@ -1,0 +1,17 @@
+class animal
+{
+	public void roam()
+	{
+		System.out.println("Animals roam around the Forest.");
+	}
+}
+class lion extends animal
+{
+
+}
+class wildAnimal 
+{
+	public static void main(String[] args) 
+	{
+	}
+}

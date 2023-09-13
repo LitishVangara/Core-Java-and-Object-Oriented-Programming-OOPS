@@ -1,0 +1,9 @@
+class Question1Option1 
+{
+	public static void main(String[] args) 
+	{
+		final int x;
+		x =90989;
+		System.out.println(x);
+	}
+}

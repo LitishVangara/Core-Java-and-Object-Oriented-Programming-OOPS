@@ -1,0 +1,34 @@
+class vehicle
+{
+	public int speed = 100;
+	public void move()
+	{
+		System.out.println("The Speed of the Vehicle is = "+speed+"Km/Hr.");
+	}
+}
+class car extends vehicle
+{
+	public void race()
+	{
+		move();
+		System.out.println("Car is Racing.");
+		System.out.println("The Speed of the Car is = "+speed+"Km/Hr.");
+	}
+}
+class bus extends vehicle
+{
+	public void travel()
+	{
+		move();
+		System.out.println("Bus is Travelling.");
+		System.out.println("The Speed of the Bus is = "+speed+"Km/Hr.");
+	}
+}
+class vehicles1 
+{
+	public static void main(String[] args) 
+	{
+		bus o1 = new bus();
+		o1.travel();
+	}
+}

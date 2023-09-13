@@ -1,0 +1,31 @@
+class geometricShape
+{
+	public void shapes()
+	{
+		System.out.println("There are many types of Vehicles.");
+	}
+}
+class triangle extends geometricShape
+{
+	public void shape()
+	{
+		shapes();
+		System.out.println("Cars come under Vehicles.");
+	}
+}
+class rightAngledTriangle extends triangle
+{
+	public void anotherShape()
+	{
+		shape();
+		System.out.println("Four Wheeler is a Car.");
+	}
+}
+class geometricShapes 
+{
+	public static void main(String[] args) 
+	{
+		rightAngledTriangle o1 = new rightAngledTriangle();
+		o1.anotherShape();
+	}
+}

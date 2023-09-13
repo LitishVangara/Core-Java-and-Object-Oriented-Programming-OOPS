@@ -1,0 +1,19 @@
+abstract class Demo
+{
+	abstract public void circle();
+}
+class Sample extends Demo
+{
+	public void circle() 
+	{
+		System.out.println("Circle is a 2d Shape.");
+	}
+}
+class AbstractUpCasting 
+{
+	public static void main(String[] args) 
+	{
+		Sample sample = new Sample();
+		sample.circle();
+	}
+}

@@ -1,0 +1,37 @@
+class shape
+{
+	public void rotate()
+	{
+
+	}
+}
+class circle extends shape
+{
+	public void fill()
+	{
+	}
+}
+class rectangle extends shape
+{
+	public void outline()
+	{
+	}
+}
+class triangle extends shape
+{
+}
+class twoDShapes         /* Generalization       and Inheritance */
+{
+	public static void display(shape Shapes)
+	{
+		Shapes.rotate();
+		Shapes.fill();
+		Shapes.outline();
+	}
+	public static void main(String[] args) 
+	{
+		display (new circle());
+		display (new rectangle());
+		display (new triangle());
+	}
+}
